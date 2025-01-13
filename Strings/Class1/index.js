@@ -207,13 +207,34 @@
 
 ////// SET and MAP
 
-let set = new Set()
-set.add(10)
-set.add(210)
-set.add(false)
-set.add(40)
-set.add(10)
+// let set = new Set()
+// set.add(10)
+// set.add(210)
+// set.add(false)
+// set.add(40)
+// set.add(10)
 
-console.log(set.has(10));
+// console.log(set.has(10));
+
+// console.log(set);
+
+// let arr = [10, 20, 30, 40, 50]
+// let set = new Set()
+
+// for(let i = 0; i<arr.length; i++){
+//     set.add(arr[i])
+// }
+
+// console.log(set);
+
+///// Only that elem should return who's occurance is single time only...
+
+let arr = [10, 12, 10, 12, 4, 1, 2, 4, 2]
+let set = new Set()
+
+for(let i = 0; i<arr.length; i++){
+   if(set.has(arr[i]))  set.delete(arr[i])
+    else set.add(arr[i])
+}
 
 console.log(set);
