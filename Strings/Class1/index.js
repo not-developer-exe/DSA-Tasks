@@ -229,12 +229,27 @@
 
 ///// Only that elem should return who's occurance is single time only...
 
-let arr = [10, 12, 10, 12, 4, 1, 2, 4, 2]
-let set = new Set()
+// let arr = [10, 12, 10, 12, 4, 1, 2, 4, 2]
+// let set = new Set()
 
-for(let i = 0; i<arr.length; i++){
-   if(set.has(arr[i]))  set.delete(arr[i])
-    else set.add(arr[i])
-}
+// for(let i = 0; i<arr.length; i++){
+//    if(set.has(arr[i]))  set.delete(arr[i])
+//     else set.add(arr[i])
+// }
 
-console.log(set);
+// console.log(set);
+
+
+// let map = new Map()
+
+// map.set('Aditya', 2)
+// map.set('abc', 1)
+// map.set('bcd', 3)
+// map.set('cde', 4)
+// map.set('Aditya', 120)
+
+// console.log(map);
+
+
+
+
