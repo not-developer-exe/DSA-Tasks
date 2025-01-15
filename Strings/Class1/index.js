@@ -250,6 +250,50 @@
 
 // console.log(map);
 
+// let map = new Map()
+
+// let arr = [1,2,3,4,5,6,7,14,15,65,35,56,464]
+
+// for(let i = 0; i<arr.length; i++){
+//     if(map.has(arr[i])){
+//         map.set(arr[i],map.get(arr[i])+1)
+//     }else{
+//         map.set(arr[i], 1)
+//     }
+// }
+
+// console.log(map);
+
+///alternate method
+
+// for(let i = 0; i<arr.length; i++){
+//     map.set(arr[i], (map.get(arr[i]) || 0) +1)
+// }
+// console.log(map);
+
+let arr = [2,4,2,1,5,4,6,7,6,4,6]
+
+let map = new Map()
+
+for(let i = 0; i<arr.length; i++){
+    map.set(arr[i], (map.get(arr[i])||0)+1)
+}
+
+console.log("Elements Frequency: ",map);
+
+
+let unique = []
+
+for (let [key, value] of map){
+    if(value === 1){
+        unique.push(key)
+    }
+}
+
+console.log("Unique elems: ",unique);
+
+
+
 
 
 
