@@ -62,9 +62,7 @@
 // }
 // console.log(isAnagram);
 
-
-////////////// palindrome 
-
+////////////// palindrome
 
 // let str = "vnjfn"
 
@@ -81,13 +79,11 @@
 
 // console.log(isPalindrome());
 
-
 ////// Shortest Path
-
 
 // let path = "ENWES"
 // let x = 0;
-// let y = 0; 
+// let y = 0;
 
 // const isShortPath = () => {
 //   for( let i =0; i<path.length; i++){
@@ -128,20 +124,16 @@
 // }
 // console.log(largest);
 
-
-
 // //////// Test 1
 
 // let str1 = "tony"
 // let str2 = "tony"
 // let str3 = new String("tony")
 
-
 // if(str1==str3){
 //     console.log(true);
-    
-// }
 
+// }
 
 // let str = "kfbvdebvbDIJSBBCVHJ"
 // let ans = ""
@@ -156,17 +148,13 @@
 // }
 // console.log(ans);
 
-
-
 // let str = "aaaabbccdde"
 
 // let ans = ""
 
 // for(let i = 0; i<str.length; i++){
-    
+
 // }
-
-
 
 /////////// Count the frequency of each Number (Array)
 
@@ -180,11 +168,11 @@
 //                 count++
 //                 arr[j] = -1
 //             }
-    
+
 //         }
 //         console.log(`${arr[i]} is found ${count} times`);
 //     }
-    
+
 // }
 
 ////// match the given sum
@@ -202,8 +190,6 @@
 // }
 
 // console.log(count);
-
-
 
 ////// SET and MAP
 
@@ -239,7 +225,6 @@
 
 // console.log(set);
 
-
 // let map = new Map()
 
 // map.set('Aditya', 2)
@@ -271,29 +256,129 @@
 // }
 // console.log(map);
 
-let arr = [2,4,2,1,5,4,6,7,6,4,6]
+// let arr = [2,4,2,1,5,4,6,7,6,4,6]
 
-let map = new Map()
+// let map = new Map()
 
-for(let i = 0; i<arr.length; i++){
-    map.set(arr[i], (map.get(arr[i])||0)+1)
-}
+// for(let i = 0; i<arr.length; i++){
+//     map.set(arr[i], (map.get(arr[i])||0)+1)
+// }
 
-console.log("Elements Frequency: ",map);
+// console.log("Elements Frequency: ",map);
 
+// let unique = []
 
-let unique = []
+// for (let [key, value] of map){
+//     if(value === 1){
+//         unique.push(key)
+//     }
+// }
 
-for (let [key, value] of map){
-    if(value === 1){
-        unique.push(key)
-    }
-}
+// console.log("Unique elems: ",unique);
 
-console.log("Unique elems: ",unique);
+//// Recursion
 
+// let n = Number(prompt('Enter the num: '))
 
+// const printNum = (n) =>{
+//     if(n==0) return
 
+//     return console.log(n) + printNum(n-1)
 
+// }
 
+// printNum(n)
 
+//// Print from 1 from n
+
+// let n = 5
+
+// const printNum = (n) =>{
+// if(n==0) return
+
+//     return printNum(n-1) + console.log(n)
+
+// }
+
+// printNum(n)
+
+//// Sum from 1 to n
+
+// let n =5
+
+// const sum =(n) => {
+//     if(n==0) return 0
+
+//     return n + sum(n-1)
+
+// }
+// console.log(sum(n));
+
+//// Factorial of n
+
+// let n =5
+
+// const fact = (n) =>{
+//     if (n==0) return 1
+
+//     return n*fact(n-1)
+// }
+
+// console.log(fact(n));
+
+//// Sum of digits (113 = 1+1+3)
+
+// let n = 113
+
+// const sumOfDigits = (n)=>{
+//     if(n<10) return n
+
+//     return (n % 10) + sumOfDigits(Math.floor(n / 10));
+// }
+
+// console.log(sumOfDigits(n))
+
+///// Revesre digits of num
+
+// let n = 789
+// let rev= 0
+
+// const reverse = (n, rev) =>{
+//     if(n==0) return rev
+
+//     rev = rev*10 + n%10
+
+//     return reverse(Math.floor(n/10), rev)
+
+// }
+
+// console.log(reverse(n, rev));
+
+///// Fibonacci Sequence
+// let n = 8
+
+// const fibo = (n)=>{
+//     if(n==0 || n==1) return n
+
+//     return fibo(n-1) + fibo(n-2)
+// }
+
+// const fiboSeries = (n) => {
+//     for (let i = 0; i < n; i++) {
+//         console.log(fibo(i));
+
+//     }
+// };
+
+// fiboSeries(n)
+
+// let n = 10;
+
+// const fibo = (n, a = 0, b = 1) => {
+//   if (n == 0) return;
+
+//   console.log(a);
+
+//   fibo(n-1, b, a + b);
+// };
+// fibo(n)
