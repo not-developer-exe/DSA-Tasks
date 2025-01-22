@@ -382,3 +382,40 @@
 //   fibo(n-1, b, a + b);
 // };
 // fibo(n)
+
+////GCD
+
+// const findGCD = (a,b)=>{
+//     if(b==0) return a
+
+//     return findGCD(b, a%b)
+// }
+
+// console.log(findGCD(13, 26));
+
+
+// const factors = (n, i) => {
+//     if (i > Math.floor(n / 2)) {
+//         console.log(n); 
+//         return; 
+//     }
+
+//     if (n % i === 0) console.log(i); 
+//     factors(n, i + 1); 
+// };
+// factors(50, 1);
+
+
+const factors = (n, i = 1) => {
+    if (i > Math.sqrt(n)) return; 
+    
+    if (n % i === 0) {
+        console.log(i); 
+        if (i == n / i) console.log(n / i);
+    }
+    
+    factors(n, i+1)
+};
+factors(100);
+
+
