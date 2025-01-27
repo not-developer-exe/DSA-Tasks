@@ -406,16 +406,35 @@
 // factors(50, 1);
 
 
-const factors = (n, i = 1) => {
-    if (i > Math.sqrt(n)) return; 
+// const factors = (n, i = 1) => {
+//     if (i > Math.sqrt(n)) return; 
     
-    if (n % i === 0) {
-        console.log(i); 
-        if (i == n / i) console.log(n / i);
-    }
+//     if (n % i === 0) {
+//         console.log(i); 
+//         if (i == n / i) console.log(n / i);
+//     }
     
-    factors(n, i+1)
-};
-factors(100);
+//     factors(n, i+1)
+// };
+// factors(100);
+
+/////// Factor kese nikalein acche se 
+
+
+// let i = 1;
+// let n =30
+
+// for(i; i*i<n; i++){
+//     if(n%i==0) console.log(i);  /// This loop prints the factor until i^2 is less than n eg. 6x6 < 30 . here the condition is false. 
+    
+// }
+
+// if(i-n/i == 1) i--  /// When i*i condition gets false on the prev loop, here we reduce the value of i by 1 so that it does not get repeated when factors are printed. This will happen only when 'n' is not a perfect square and value of 'n' is even
+
+// for( ; i>=1; i--){
+//     if(n%i==0) console.log(n/i);  //// bcha kucha kaam ye bhai krdega 
+    
+// }
+
 
 
