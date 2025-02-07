@@ -62,3 +62,28 @@ let n = 5
 // ---Shift larger elements to the right to make space.
 // ---Place the picked element in the correct position.
 // ---Repeat this process for all elements.
+
+
+
+//////// Selection Sort
+
+// let arr = [7, 4, 3, 5, 1, 9];
+
+// for(let i = 0; i<arr.length-1; i++){
+//     let minIdx = i;
+
+//     for(let j = i+1; j<arr.length; j++){
+//        if (arr[j]<arr[minIdx]) minIdx = j
+//     }
+
+//     [arr[i], arr[minIdx]] = [arr[minIdx], arr[i]];
+// }
+
+// console.log(arr)
+
+
+
+///// BUBBLE SORT
+
+let arr = [7, 4, 3, 5, 1, 9];
+
