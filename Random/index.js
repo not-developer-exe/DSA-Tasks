@@ -1,6 +1,6 @@
 /// Prime Number
 
-let n = 5
+let n = 5;
 // let count = 0;
 
 // for(let i = 0; i<=n; i++){
@@ -12,32 +12,28 @@ let n = 5
 
 // const fibo = (n)=>{
 //         if(n==0 || n==1) return n
-    
+
 //         return fibo(n-1) + fibo(n-2)
 // }
-    
+
 // const fiboSeries = (n) => {
 //         for (let i = 0; i < n; i++) {
 //             console.log(fibo(i));
-    
+
 //         }
 // };
-    
-// fiboSeries(n)
 
+// fiboSeries(n)
 
 // const fibo2 = (n) => {
 //     let a = 0, b = 1;
 //     for (let i = 0; i < n; i++) {
 //         console.log(a);
-//         [a, b] = [b, a + b]; 
+//         [a, b] = [b, a + b];
 //     }
 // };
 
 // fibo2(5);
-
-
-
 
 //////////  Insertion Sort
 
@@ -63,8 +59,6 @@ let n = 5
 // ---Place the picked element in the correct position.
 // ---Repeat this process for all elements.
 
-
-
 //////// Selection Sort
 
 // let arr = [7, 4, 3, 5, 1, 9];
@@ -81,9 +75,35 @@ let n = 5
 
 // console.log(arr)
 
-
-
 ///// BUBBLE SORT
 
-let arr = [7, 4, 3, 5, 1, 9];
+// let arr = [7, 4, 3, 5, 1, 9];
+
+/// Cyclic sort
+
+// let arr = [5, 4, 6, 3, 1, 2];
+
+// let i = 0;
+// while (i <= arr.length) {
+//   let idx = arr[i] - 1;
+
+//   if (arr[i] != arr[idx]) {
+//     [arr[i], arr[idx]] = [arr[idx], arr[i]];
+//   } else i++;
+// }
+
+// console.log(arr);
+
+//// Binary Search
+
+let arr = [3,5,8,9,12,15,17,21,25]
+
+let tar = 21
+
+let left = 0, right = arr.length-1, mid = Math.floor((left+right-left/2))
+
+while(left<right){
+    
+}
+
 
