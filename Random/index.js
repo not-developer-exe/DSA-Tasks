@@ -96,14 +96,25 @@ let n = 5;
 
 //// Binary Search
 
-let arr = [3,5,8,9,12,15,17,21,25]
+// let arr = [3,5,8,9,12,15,17,21,25]
 
-let tar = 21
+// let tar = 21
 
-let left = 0, right = arr.length-1, mid = Math.floor((left+right-left/2))
+// let left = 0, right = arr.length-1, mid = Math.floor((left+right-left/2))
 
-while(left<right){
+// while(left<right){
     
-}
+// }
+
+/// Find the occurance of a number in an array using hashing
+
+// let arr = [2,1,4,1,2,2,3,1]
+// let map = {}
+
+// for(let num of arr){
+//     map[num] = map[num]+1 || 1
+// }
+// console.log(map)
+
 
 
